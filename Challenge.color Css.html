@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Page</title>
+    <style>
+      body {
+        color: #fff;
+        font-family: "Cerebri San", Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to top, #7f4385 0%, #ffffff 100%);
+        width: 50%;
+        margin: 60px auto;
+      }
+      h1, h2 {
+        font-family: 'Cerebri Sans', Arial, sans-serif;
+        text-align: center;
+        line-height: 50px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: justify;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 4px;
+      }
+      .container {
+        background: linear-gradient(to right, #a95bb8, #53216f);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease;
+      }
+      .container:hover {
+        transform: scale(1.02);
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 15px 25px;
+        font-size: 18px;
+        background: #111;
+        color: #fff;
+        border-radius: 8px;
+        box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+        transition: transform 0.2s, background 0.3s;
+      }
+      button:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        background: rgb(19, 49, 25);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>I love traveling</h1>
+        <h2><span>Discover Your Next Adventure</span></h2>
+        <hr />
+        <img
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=60"
+          alt="Explore the World"
+          width="300"
+        />
+        <hr />
+        <p>
+          <strong>Explore the World</strong> with ease! 🌍 With tools like Google Travel Explore, you can plan your perfect trip, discover new destinations, and find the best places to visit and stay at great prices. Whether you love beaches, bustling cities, or natural adventures, these tools make traveling fun and effortless.
+        </p>
+        <a href="https://www.google.com/travel/explore" target="_blank" rel="noopener noreferrer">Google Travel Explore</a>
+        <br />
+        <button>Explore</button>
+      </div>
+    </section>
+    <script>
+      function Explore () {
+        let name = prompt("What is your name?");
+        let city = prompt("What city do you live in?");
+        alert("Hello " + name + ", explore your city " + city );
+      }
