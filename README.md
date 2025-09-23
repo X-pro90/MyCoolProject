@@ -82,3 +82,8 @@
         let city = prompt("What city do you live in?");
         alert("Hello " + name + ", explore your city " + city );
       }
+      let ChangeButton = document.querySelector("button");
+      ChangeButton.addEventListener("click", Explore);
+    </script>
+  </body>
+</html>
