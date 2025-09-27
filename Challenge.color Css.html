@@ -1,84 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Page</title>
-    <style>
-      body {
-        color: #fff;
-        font-family: "Cerebri San", Arial, Helvetica, sans-serif;
-        background-image: linear-gradient(to top, #7f4385 0%, #ffffff 100%);
-        width: 50%;
-        margin: 60px auto;
-      }
-      h1, h2 {
-        font-family: 'Cerebri Sans', Arial, sans-serif;
-        text-align: center;
-        line-height: 50px;
-      }
-      p {
-        font-size: 16px;
-        line-height: 1.6;
-        text-align: justify;
-      }
-      img {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        border-radius: 4px;
-      }
-      .container {
-        background: linear-gradient(to right, #a95bb8, #53216f);
-        padding: 30px;
-        border-radius: 15px;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-        transition: transform 0.3s ease;
-      }
-      .container:hover {
-        transform: scale(1.02);
-      }
-      button {
-        display: block;
-        margin: 20px auto;
-        padding: 15px 25px;
-        font-size: 18px;
-        background: #111;
-        color: #fff;
-        border-radius: 8px;
-        box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
-        transition: transform 0.2s, background 0.3s;
-      }
-      button:hover {
-        cursor: pointer;
-        transform: scale(1.05);
-        background: rgb(19, 49, 25);
-      }
-    </style>
-  </head>
-  <body>
-    <section>
-      <div class="container">
-        <h1>I love traveling</h1>
-        <h2><span>Discover Your Next Adventure</span></h2>
-        <hr />
-        <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=60"
-          alt="Explore the World"
-          width="300"
-        />
-        <hr />
-        <p>
-          <strong>Explore the World</strong> with ease! 🌍 With tools like Google Travel Explore, you can plan your perfect trip, discover new destinations, and find the best places to visit and stay at great prices. Whether you love beaches, bustling cities, or natural adventures, these tools make traveling fun and effortless.
-        </p>
-        <a href="https://www.google.com/travel/explore" target="_blank" rel="noopener noreferrer">Google Travel Explore</a>
-        <br />
-        <button>Explore</button>
-      </div>
-    </section>
-    <script>
-      function Explore () {
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sala hobby</title>
+</head>
+<style>
+  body {
+background: linear-gradient(109.6deg, rgb(43, 1, 91) 13.4%, rgb(122, 2, 54) 100.2%);     text-align: center;
+  }
+  img{
+    max-width: 100%;
+    border-radius: 10px;
+    
+  }
+  h1{
+    text-align: center;
+
+  }
+  h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #DDDDDD;
+  }
+  p{
+    color: #DDDDDD;
+  }
+  em{
+    color: bisque;
+    font: optional;
+    font-size: large;
+  }
+ .contrainer{
+background: linear-gradient(91.7deg, rgb(50, 25, 79) -4.3%, rgb(122, 101, 149) 101.8%);  max-width: 600px;
+  margin: 20px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ }
+ strong{
+  color: rgb(184, 141, 222);
+  display: block;
+  margin-left: 0;
+  text-align: left;
+  padding: 10px;
+  font-weight: normal;
+  font-size: 15px;
+ }
+ button{
+  display: block;
+  margin: 30px auto;
+  background:#523c6c;
+  color: rgb(248, 248, 248);
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 5px;
+  transition: all 150ms ease-in-out;
+font-family: fantasy;
+ }
+ button:hover{
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  transform: scale(1.1);
+ 
+  
+ }
+ .theme_button{
+  font-size: small;
+  background: #02635b;
+  color: rgb(255, 255, 255);
+   margin: 0 auto;
+   border: black;
+ }
+ .theme_button:hover{
+  background: #333333;
+  color: white;
+ }
+ footer{
+  margin-top: 30px;
+  font-style: italic;
+  color:#c7c5c5;
+ }
+ .image1{
+  transition: all 150ms ease-in-out;
+ }
+ .image1:hover{
+  transform: scale(1.1);
+  
+ filter:contrast(80%);
+ }
+ .grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 10px 0;
+  grid-gap: 5px;
+
+ }
+ .grid img{
+  width: 100%;
+  transition: all 150ms ease-in-out;
+  border-radius: 10px;
+ }
+.grid img:hover{
+  transform: scale(2.5);
+}
+.dark{
+ background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/219/original/dicky-jiang-ILV9Q1dDswM-unsplash.jpg?1758982913")
+}
+ .dark .contrainer{
+  background:rgb(43, 43, 43);
+  color: white;
+}
+.brad{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 30px 50px;
+  grid-gap: 5px;
+}
+.brad img{
+  width: 100%;
+  transition: all 150ms ease-in-out;
+  border-radius: 20px;
+
+}
+.brad img:hover{
+  transform: scale(1.3);
+}
+#message {
+  color: rgb(244, 238, 238);
+  font-size: 15px;
+}
+
+
+
+</style>
+<body >
+  <button class="theme_button"> Change Theme </button>
+   <div class="contrainer">
+  <h1>📸Whats is Photography?</h1>
+  <h2>Explore Photography</h2>
+ 
+    <a  href="https://en.wikipedia.org/wiki/Photography" target="_blank">
+   <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/193/original/babi-DAu61oUP9Vw-unsplash.jpg?1758918221" alt="" width="450"
+    class="image1"/></a>
+    <div class="grid">
+  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/196/original/emma-ou-V3WAS79d_ac-unsplash.jpg?1758918384" alt="" width="" >
+  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/200/original/alif-ngoylung-jg-6ARMiaPM-unsplash_%281%29.jpg?1758920232" alt="" width="">
+   <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/198/original/chris-zhang-mwjqyfVb1Ds-unsplash.jpg?1758918558" alt="">
+   <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/199/original/marco-xu-ToUPBCO62Lw-unsplash.jpg?1758918737" alt="">
+</div>
+
+  <p>Photography is the art, application, and practice of creating images by recording light, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film. It is employed in many fields of science, manufacturing (e.g., photolithography), and business, as well as its more direct uses for art, film and video production.
+   </p> 
+    <br>
+    
+    <em>Before the emergence of digital photography, photographs that utilized film had to be developed to produce negatives or projectable slides, and negatives had to be printed as positive images, usually in enlarged form. This was typically done by photographic laboratories, but many amateur photographers, students, and photographic artists did their own processing.</em>
+<a href="https://en.wikipedia.org/wiki/Photography">
+
+  <strong>👉 Learn Salsa</strong></a>
+    <div class="brad">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/217/original/3e82b5f81ebf5f18c221ce82d5c41b5d--photography-office-school-photography.jpg?1758982314" alt="">
+  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/219/original/dicky-jiang-ILV9Q1dDswM-unsplash.jpg?1758982913" alt="">
+  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/220/original/francisco-gonzalez-Rkl8qRP_8oE-unsplash.jpg?1758982998" alt="">
+ <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/232/original/miguel-dominguez-zGJgUS-Y8Eg-unsplash.jpg?1758984160" alt="">
+    </div>
+ 
+   
+   <button class="Contact"> Get in touch for further details </button>
+   <div id ="message"></div>
+   </div>
+ <footer> 👩‍💻Coded with by Saadia Hmarou💕 with HTML, CSS and JavaScript</footer>
+ <script>
+  function ChangeTheme(){
+    let body= document.querySelector("body");
+    if(body.classList.contains("dark")) {
+      body.classList.remove("dark");
+
+    } else {
+      body.classList.add("dark");
+    }
+  
+  }
+  let themeButton = document.querySelector(".theme_button");
+  themeButton.addEventListener("click", ChangeTheme);
+
+  
+      function Contact() {
+        let field = prompt("Do you find the field of photography appealing?");
         let name = prompt("What is your name?");
-        let city = prompt("What city do you live in?");
-        alert("Hello " + name + ", explore your city " + city );
+        let Gmail = prompt("What is your email?");
+        let messageDiv = document.getElementById("message");
+
+      
+      
+         messageDiv.innerHTML = "Welcome " + name + ", We'll be in touch soon with more details. Feel free to contact us if you have any questions Saadia@Hm.ma";
       }
+      let contactButton = document.querySelector(".Contact");
+      contactButton.addEventListener("click", Contact);
+  //....existing code...
+    
+ 
+
+ </script>
+
+</body>
+</html>
